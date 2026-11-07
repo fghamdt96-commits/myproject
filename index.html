@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <style>
+      :root {
+        --bg: #0f172a;
+        --panel: #111827;
+        --card: #1f2937;
+        --text: #e5e7eb;
+        --muted: #9ca3af;
+        --accent: #60a5fa;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, var(--bg), #1e293b);
+        color: var(--text);
+        display: grid;
+        place-items: center;
+      }
+
+      .container {
+        width: min(900px, 90vw);
+        background: rgba(17, 24, 39, 0.85);
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 20px 45px rgba(15, 23, 42, 0.45);
+        padding: 3rem 2rem;
+      }
+
+      h1 {
+        margin: 0 0 1rem;
+        font-size: clamp(2.5rem, 5vw, 4rem);
+      }
+
+      p {
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 1.1rem;
+      }
+
+      .badge {
+        display: inline-block;
+        margin-bottom: 1rem;
+        padding: 0.45rem 0.8rem;
+        border-radius: 999px;
+        background: rgba(96, 165, 250, 0.15);
+        border: 1px solid rgba(96, 165, 250, 0.4);
+        color: var(--accent);
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        font-size: 0.72rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="badge">Project Ready</div>
+      <h1>My Project</h1>
+      <p>
+        This page was empty because the repository contained a zero-byte <code>index.html</code>.
+        It has now been restored to a valid GitHub Pages landing page.
+      </p>
+      <p>
+        The project is ready to be viewed and expanded as needed.
+      </p>
+    </main>
+  </body>
+</html>
